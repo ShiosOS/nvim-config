@@ -1,4 +1,3 @@
--- lua/plugins/lsp.lua
 return {
   'neovim/nvim-lspconfig',
   dependencies = {
@@ -9,7 +8,6 @@ return {
     'hrsh7th/cmp-nvim-lsp',
   },
   config = function()
-    -- Diagnostic signs
     if vim.g.have_nerd_font then
       local signs = { ERROR = ' ', WARN = ' ', INFO = ' ', HINT = '󰌵 ' }
       local diagnostic_signs = {}
@@ -54,7 +52,6 @@ return {
       end,
     })
 
-    -- Ensure these servers are installed
     local ensure_installed = {
       'lua_ls',
       'omnisharp',
@@ -67,7 +64,6 @@ return {
 
     local lspconfig = require 'lspconfig'
 
-    -- Configure LSP servers
     require('mason-lspconfig').setup {
       handlers = {
         ['vue_ls'] = function() end,
@@ -79,7 +75,6 @@ return {
           }
         end,
 
-        -- The configuration name is still 'vetur'
         ['vetur'] = function()
           lspconfig.vetur.setup {
             capabilities = capabilities,
