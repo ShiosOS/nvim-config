@@ -22,7 +22,6 @@ return {
       harpoon:list():next()
     end, { desc = 'Next harpoon file' })
 
-    -- Number shortcuts
     for i = 1, 5 do
       vim.keymap.set('n', '<leader>' .. i, function()
         harpoon:list():select(i)
