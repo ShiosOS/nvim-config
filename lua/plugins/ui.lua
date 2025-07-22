@@ -1,5 +1,4 @@
 return {
-  -- Theme
   {
     'dracula_pro',
     dir = vim.fn.stdpath 'data' .. '/site/pack/themes/start/dracula_pro',
@@ -10,8 +9,6 @@ return {
       vim.cmd.hi 'Comment gui=none'
     end,
   },
-
-  -- Which-key
   {
     'folke/which-key.nvim',
     event = 'VimEnter',
@@ -31,8 +28,6 @@ return {
       },
     },
   },
-
-  -- Status line and other UI
   {
     'echasnovski/mini.nvim',
     config = function()
