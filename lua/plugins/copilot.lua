@@ -1,4 +1,3 @@
--- lua/plugins/copilot.lua
 return {
   'zbirenbaum/copilot.lua',
   cmd = 'Copilot',
@@ -13,11 +12,10 @@ return {
   },
   opts = {
     suggestion = {
-      -- This enables the ghost text
       auto_trigger = true,
       keymap = {
-        accept = '<C-y>', -- Alt+l
-        dismiss = '<C-n>', -- Alt+h
+        accept = '<C-y>',
+        dismiss = '<C-n>',
       },
     },
     panel = {
