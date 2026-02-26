@@ -1,0 +1,30 @@
+tt.*
+.tests
+doc/tags
+debug
+.repro
+foo.*
+*.log
+data
+
+# Neovim generated files
+*.swp
+*.swo
+*~
+.netrwhist
+plugin/packer_compiled.lua
+
+# Local-only state
+.session/
+.sessions/
+shada/
+
+# Local secrets
+.env
+.env.*
+*.pem
+*.key
+
+# OS files
+.DS_Store
+Thumbs.db
